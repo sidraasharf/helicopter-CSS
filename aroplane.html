@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         @keyframes helanimation{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg); 
+        }
+    }
+    .hel{
+        animation: helanimation 5s linear 0s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes helanimation{
+        0%{
+            
+            margin-left: 50px;
+           
+           
+        }
+
+        50%{
+            margin-top: 300px;;
+        }
+
+        100%{
+            
+            margin-left: 200px;
+            margin-top: 300px;
+        }
+    }
+    .box{
+        width: 0px;
+        height: 0px;
+        /* margin-top: 0px; */
+     animation: boxanimation 10s linear 0s, width 2s linear 0s;
+     animation-iteration-count: infinite;
+    }
+    @keyframes fanjpg{
+            from{
+                margin-left: 0px;
+                transform: rotate(20deg);
+            }
+            to{ 
+            margin-left:50%;
+            transform: rotate(180deg);
+        }
+        }
+        #fanjpg span img{
+            position: absolute;
+            animation: fanjpg 6s linear 0s;
+            animation-iteration-count: infinite;
+            width: 20px;
+            height: 25px;
+            top: 80px;
+            left: 360px;
+        }
+    </style>
+       
+</head>
+
+<body>
+    <div>
+        <img class="hel" src="hel.jpg" alt="IMG" width="250PX" height="250px">
+    </div>
+   
+   
+ 
+    
+</body>
+</html>
